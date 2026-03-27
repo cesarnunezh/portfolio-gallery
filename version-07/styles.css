@@ -1,0 +1,195 @@
+:root {
+  --sky: #74a8f4;
+  --sky-2: #b9d7ff;
+  --window: #f4f4f6;
+  --border: #1d1f2c;
+  --text: #181b25;
+  --muted: #4b5362;
+  --accent: #ffcb5b;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.35), transparent 20%),
+    linear-gradient(180deg, var(--sky-2) 0%, var(--sky) 100%);
+  color: var(--text);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.desktop {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.menu-bar,
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 1rem;
+  background: rgba(255, 255, 255, 0.72);
+  border-bottom: 2px solid var(--border);
+  font-family: "Courier Prime", monospace;
+}
+
+.taskbar {
+  border-top: 2px solid var(--border);
+  border-bottom: 0;
+  justify-content: flex-start;
+}
+
+.workspace {
+  width: min(calc(100% - 1rem), 1380px);
+  margin: 0 auto;
+  padding: 1rem 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.window {
+  background: var(--window);
+  border: 2px solid var(--border);
+  box-shadow: 8px 8px 0 rgba(29, 31, 44, 0.18);
+}
+
+.titlebar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0.8rem;
+  background: #d9dee8;
+  border-bottom: 2px solid var(--border);
+  font-family: "Courier Prime", monospace;
+  font-size: 0.9rem;
+}
+
+.window-body {
+  padding: 1rem;
+}
+
+.tiny {
+  margin: 0 0 0.6rem;
+  font-family: "Courier Prime", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+h1, h2, p { margin: 0; }
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.8rem);
+  line-height: 0.95;
+  max-width: 11ch;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+p, span, a {
+  line-height: 1.75;
+}
+
+.hero-window { grid-column: span 6; align-self: start; }
+.portrait-window { grid-column: span 3; margin-top: 2.5rem; }
+.links-window { grid-column: span 3; margin-top: 5rem; }
+.projects-window { grid-column: span 7; margin-top: -1.5rem; }
+.experience-window { grid-column: span 5; }
+.education-window { grid-column: span 4; margin-top: -1rem; }
+
+.image-body {
+  padding: 0;
+}
+
+.image-body img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.link-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.link-list a,
+.cards a {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.5rem 0.8rem;
+  border: 2px solid var(--border);
+  background: var(--accent);
+  font-weight: 700;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.cards article {
+  display: grid;
+  gap: 0.7rem;
+  min-height: 220px;
+  padding: 0.9rem;
+  border: 2px dashed var(--border);
+  background: rgba(255, 255, 255, 0.54);
+}
+
+.cards a {
+  margin-top: auto;
+}
+
+.stack {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.stack article {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.65rem;
+  border: 2px dashed var(--border);
+}
+
+strong {
+  font-family: "Courier Prime", monospace;
+}
+
+@media (max-width: 980px) {
+  .workspace {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-window,
+  .portrait-window,
+  .links-window,
+  .projects-window,
+  .experience-window,
+  .education-window {
+    grid-column: auto;
+    margin-top: 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+}

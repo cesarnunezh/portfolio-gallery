@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Profile feed portfolio for Cesar Nunez.">
+  <title>Cesar Nunez | Version 08</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <aside class="sidebar">
+      <div class="brand">cn://feed</div>
+      <nav>
+        <a href="#profile">Profile</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </nav>
+    </aside>
+
+    <section class="phone" id="profile">
+      <header class="profile-card">
+        <div class="cover"></div>
+        <div class="profile-meta">
+          <img src="https://cesarnunezh.netlify.app/images/profile-img.jpg" alt="Portrait of Cesar Nunez">
+          <div>
+            <p class="handle">@cesarnunez</p>
+            <h1>Cesar Nunez</h1>
+            <p class="bio">Data engineer and web developer building public-interest tools from difficult data.</p>
+          </div>
+        </div>
+        <div class="cta-row">
+          <a href="https://cesarnunezh.netlify.app/files/CV_CNH_202601.pdf" target="_blank" rel="noreferrer">Resume</a>
+          <a href="https://github.com/cesarnunezh" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/cesar-nunez-huaman/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </header>
+
+      <section id="projects" class="feed-card">
+        <div class="card-head"><span>Projects</span><span>4 posts</span></div>
+        <article class="post">
+          <h2>Open Peru</h2>
+          <p>Legislative-data platform for voting records, bills, and party behavior.</p>
+          <a href="https://github.com/cesarnunezh/OpenPeru" target="_blank" rel="noreferrer">View project</a>
+        </article>
+        <article class="post">
+          <h2>Odisha's Grievance Redressal System</h2>
+          <p>Async ETL pipeline automating ingestion and validation across 1M+ complaints.</p>
+          <a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">Watch demo</a>
+        </article>
+        <article class="post">
+          <h2>Genomics Annotation Service</h2>
+          <p>Cloud-native application using AWS, Flask, APIs, and asynchronous messaging.</p>
+          <a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">Watch demo</a>
+        </article>
+        <article class="post">
+          <h2>Chicago Crime and Education Dashboard</h2>
+          <p>Interactive map comparing crime patterns and educational attainment through geography.</p>
+          <a href="https://github.com/cesarnunezh/Crime-Education-Chicago" target="_blank" rel="noreferrer">View project</a>
+        </article>
+      </section>
+
+      <section id="experience" class="feed-card">
+        <div class="card-head"><span>Experience</span><span>career updates</span></div>
+        <article class="mini-post"><strong>2025</strong><p>DPIC · Data Engineer Intern</p></article>
+        <article class="mini-post"><strong>2020 - 2024</strong><p>Videnza Consultores · Senior Analyst</p></article>
+        <article class="mini-post"><strong>2019 - 2020</strong><p>CPC · Analyst</p></article>
+        <article class="mini-post"><strong>2018 - 2019</strong><p>AC Publica · Project Assistant</p></article>
+      </section>
+
+      <section id="education" class="feed-card">
+        <div class="card-head"><span>Education</span><span>2 entries</span></div>
+        <article class="mini-post"><strong>2024 - 2026</strong><p>M.S. in Computational Analysis and Public Policy · The University of Chicago</p></article>
+        <article class="mini-post"><strong>2013 - 2017</strong><p>B.S. in Economics · University of the Pacific, Lima, Peru</p></article>
+      </section>
+    </section>
+
+    <aside class="widgets">
+      <section class="widget">
+        <p class="widget-label">Summary</p>
+        <p>I build ETL pipelines, APIs, dashboards, and civic-tech products that make public-sector information more usable and transparent.</p>
+      </section>
+      <section class="widget">
+        <p class="widget-label">Recent stack</p>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>FastAPI / Flask</li>
+          <li>Docker</li>
+          <li>AWS</li>
+          <li>Pydantic</li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>
