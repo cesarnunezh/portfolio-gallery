@@ -1,17 +1,3 @@
-:root {
-  --bg: #ece4d8;
-  --surface: rgba(255, 250, 243, 0.78);
-  --surface-strong: #f8f1e7;
-  --text: #1d2521;
-  --muted: #5a655f;
-  --line: rgba(29, 37, 33, 0.12);
-  --accent: #9b4d34;
-  --shadow: 0 18px 44px rgba(49, 38, 22, 0.12);
-  --max-width: 1180px;
-  --radius-lg: 30px;
-  --radius-md: 22px;
-}
-
 *,
 *::before,
 *::after {
@@ -21,189 +7,54 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Manrope", sans-serif;
-  color: var(--text);
-  background:
-    radial-gradient(circle at top left, rgba(213, 141, 98, 0.34), transparent 28%),
-    radial-gradient(circle at 88% 12%, rgba(155, 77, 52, 0.16), transparent 20%),
-    linear-gradient(180deg, #f2eadf 0%, var(--bg) 48%, #e8dfd2 100%);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  background: #ffffff;
+  color: #111111;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
-.page-shell {
-  width: min(calc(100% - 2rem), var(--max-width));
-  margin: 0 auto;
-  padding: 2rem 0 4rem;
-}
-
-.hero,
-.section {
-  animation: rise 700ms ease both;
-}
-
-.hero {
-  padding: 3rem 0 2rem;
-}
-
-.eyebrow,
-.section-kicker,
-.version-id {
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.78rem;
-  color: var(--accent);
-  font-weight: 800;
-}
-
-h1,
-.section-head h2,
-.gallery-card h3 {
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  line-height: 0.95;
-  margin: 0;
-}
-
-h1 {
-  font-size: clamp(3.2rem, 7vw, 6.4rem);
-  max-width: 12ch;
-}
-
-.hero-copy,
-.gallery-card p {
-  color: var(--muted);
-  line-height: 1.75;
-}
-
-.hero-copy {
-  max-width: 62ch;
-  margin-top: 1.3rem;
-  font-size: 1.06rem;
-}
-
-.section {
-  padding-top: 1rem;
-}
-
-.section-head {
+.selector {
+  min-height: 100vh;
   display: grid;
-  gap: 0.6rem;
-  margin-bottom: 1.4rem;
+  place-items: center;
+  padding: 2rem 1rem;
 }
 
-.section-head h2 {
-  font-size: clamp(2.2rem, 4.8vw, 4rem);
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.gallery-card {
-  display: grid;
-  gap: 0.95rem;
-  padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: var(--radius-lg);
-  background: var(--surface);
-  backdrop-filter: blur(12px);
-  box-shadow: var(--shadow);
-  transition: transform 180ms ease, border-color 180ms ease;
-}
-
-.gallery-card:hover,
-.gallery-card:focus-within {
-  transform: translateY(-4px);
-  border-color: rgba(155, 77, 52, 0.22);
-}
-
-.gallery-card h3 {
-  font-size: 2rem;
-}
-
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
+.version-list {
+  width: min(100%, 720px);
   margin: 0;
   padding: 0;
   list-style: none;
+  border: 1px solid #111111;
 }
 
-.tag-list li {
-  padding: 0.45rem 0.8rem;
-  border: 1px solid rgba(155, 77, 52, 0.18);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.34);
-  color: #38413c;
-  font-size: 0.92rem;
+.version-list li + li {
+  border-top: 1px solid #111111;
 }
 
-.card-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 3rem;
-  width: fit-content;
-  padding: 0.75rem 1rem;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 700;
-  background: #1b1f1d;
-  color: #f6efe5;
-  transition: transform 180ms ease, background-color 180ms ease;
+.version-list a {
+  display: block;
+  padding: 1rem 1.25rem;
 }
 
-.card-link:hover,
-.card-link:focus-visible {
-  transform: translateY(-2px);
-  background: #2a312d;
+.version-list a:hover,
+.version-list a:focus-visible {
+  background: #111111;
+  color: #ffffff;
 }
 
-:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 4px;
-}
-
-@keyframes rise {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (max-width: 860px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .page-shell {
-    width: min(calc(100% - 1rem), var(--max-width));
-    padding-top: 1.2rem;
-  }
-
-  h1 {
-    font-size: clamp(2.7rem, 12vw, 4.4rem);
-  }
-
-  .section-head h2 {
-    font-size: clamp(2rem, 10vw, 3rem);
-  }
-
-  .gallery-card {
-    padding: 1.2rem;
-    border-radius: var(--radius-md);
-  }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

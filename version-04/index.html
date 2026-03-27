@@ -3,144 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Technical peer portfolio for Cesar Nunez.">
+  <meta name="description" content="Blueprint technical portfolio for Cesar Nunez.">
   <title>Cesar Nunez | Version 04</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="frame">
-    <aside class="sidebar">
-      <p class="terminal-tag">version-04 / technical-peer</p>
-      <h1>Cesar Nunez</h1>
-      <p class="summary">
-        Data engineer and web developer working on public-interest systems, data pipelines, APIs, and production-oriented tools.
-      </p>
-      <nav class="sidebar-nav">
-        <a href="#about">about</a>
-        <a href="#projects">projects</a>
-        <a href="#experience">experience</a>
-        <a href="#education">education</a>
-      </nav>
-      <div class="sidebar-links">
-        <a href="https://cesarnunezh.netlify.app/files/CV_CNH_202601.pdf" target="_blank" rel="noreferrer">resume.pdf</a>
-        <a href="https://github.com/cesarnunezh" target="_blank" rel="noreferrer">github</a>
-        <a href="https://www.linkedin.com/in/cesar-nunez-huaman/" target="_blank" rel="noreferrer">linkedin</a>
+  <main class="sheet">
+    <header class="sheet-header">
+      <div>
+        <p class="code">Version 04 / Blueprint Technical</p>
+        <h1>Cesar Nunez</h1>
       </div>
-    </aside>
+      <div class="header-meta">
+        <p>Data Engineer / Web Developer</p>
+        <p><a href="https://cesarnunezh.netlify.app/files/CV_CNH_202601.pdf" target="_blank" rel="noreferrer">resume</a> · <a href="https://github.com/cesarnunezh" target="_blank" rel="noreferrer">github</a> · <a href="https://www.linkedin.com/in/cesar-nunez-huaman/" target="_blank" rel="noreferrer">linkedin</a></p>
+      </div>
+    </header>
 
-    <main class="content">
-      <section id="about" class="panel hero-panel">
-        <div class="panel-top">
-          <span>about</span>
-          <span>focus: reliability + public usability</span>
-        </div>
-        <h2>Engineering for messy data and real institutional constraints.</h2>
-        <p>
-          I build ETL pipelines, APIs, dashboards, and data products for domains where data quality is uneven,
-          infrastructure constraints are real, and outputs need to remain understandable to non-technical stakeholders.
-        </p>
-        <ul class="chips">
-          <li>Python</li>
-          <li>SQL</li>
-          <li>FastAPI</li>
-          <li>Flask</li>
-          <li>Docker</li>
-          <li>AWS</li>
-          <li>Pydantic</li>
-          <li>GitHub Actions</li>
-        </ul>
-      </section>
+    <section class="spec">
+      <div class="label">Summary</div>
+      <div class="value">
+        Builds ETL pipelines, APIs, dashboards, and product-facing systems for civic-tech and public-sector contexts where data quality,
+        transparency, and operational constraints all matter.
+      </div>
+    </section>
 
-      <section id="projects" class="panel">
-        <div class="panel-top">
-          <span>projects</span>
-          <span>selected systems</span>
-        </div>
-        <div class="project-list">
-          <article class="entry">
-            <h3>Open Peru</h3>
-            <p>Legislative-data platform focused on voting records, bills, and party behavior.</p>
-            <dl>
-              <dt>stack</dt><dd>web scraping, SQL, Pydantic</dd>
-              <dt>goal</dt><dd>political accountability through usable civic data</dd>
-              <dt>link</dt><dd><a href="https://github.com/cesarnunezh/OpenPeru" target="_blank" rel="noreferrer">repository</a></dd>
-            </dl>
-          </article>
-          <article class="entry">
-            <h3>Odisha's Grievance Redressal System</h3>
-            <p>Async ETL pipeline for Janasunani complaint data at million-record scale.</p>
-            <dl>
-              <dt>stack</dt><dd>Python, asyncio, httpx, Docker</dd>
-              <dt>impact</dt><dd>75% faster extraction and stronger validation</dd>
-              <dt>link</dt><dd><a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">demo</a></dd>
-            </dl>
-          </article>
-          <article class="entry">
-            <h3>Genomics Annotation Service</h3>
-            <p>AWS-based application for scalable file processing and role-based access.</p>
-            <dl>
-              <dt>stack</dt><dd>AWS, Flask, REST APIs, async messaging</dd>
-              <dt>goal</dt><dd>cloud-native workflow design</dd>
-              <dt>link</dt><dd><a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">demo</a></dd>
-            </dl>
-          </article>
-          <article class="entry">
-            <h3>Chicago Crime and Education Dashboard</h3>
-            <p>Geospatial data visualization for comparing crime and educational attainment.</p>
-            <dl>
-              <dt>stack</dt><dd>Dash, Altair, Python</dd>
-              <dt>goal</dt><dd>exploratory geographic analysis</dd>
-              <dt>link</dt><dd><a href="https://github.com/cesarnunezh/Crime-Education-Chicago" target="_blank" rel="noreferrer">repository</a></dd>
-            </dl>
-          </article>
-        </div>
-      </section>
+    <section class="spec">
+      <div class="label">Core Stack</div>
+      <div class="value">Python / SQL / FastAPI / Flask / Docker / AWS / Pydantic / GitHub Actions</div>
+    </section>
 
-      <section id="experience" class="panel">
-        <div class="panel-top">
-          <span>experience</span>
-          <span>timeline</span>
-        </div>
-        <div class="experience-list">
-          <article class="entry">
-            <h3>2025 · Data Engineer Intern · DPIC</h3>
-            <p>Built an asynchronous pipeline for grievance data, improved extraction throughput, and added typed validation with ORM-backed models.</p>
-          </article>
-          <article class="entry">
-            <h3>2020 - 2024 · Senior Analyst · Videnza Consultores</h3>
-            <p>Delivered evidence products, indicator repositories, and large-scale analysis workflows for public-sector modernization and poverty policy.</p>
-          </article>
-          <article class="entry">
-            <h3>2019 - 2020 · Analyst · CPC</h3>
-            <p>Produced regional governance indicators and policy analysis from survey and administrative data.</p>
-          </article>
-          <article class="entry">
-            <h3>2018 - 2019 · Project Assistant · AC Publica</h3>
-            <p>Supported policy and infrastructure planning through econometric modeling and research synthesis.</p>
-          </article>
-        </div>
-      </section>
+    <section class="spec spec-projects">
+      <div class="label">Projects</div>
+      <div class="value">
+        <article>
+          <h2>Open Peru</h2>
+          <p>Legislative-data platform for voting records, bills, and party behavior.</p>
+          <a href="https://github.com/cesarnunezh/OpenPeru" target="_blank" rel="noreferrer">repository</a>
+        </article>
+        <article>
+          <h2>Odisha's Grievance Redressal System</h2>
+          <p>Async ETL pipeline for ingesting and validating 1M+ citizen complaints.</p>
+          <a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">demo</a>
+        </article>
+        <article>
+          <h2>Genomics Annotation Service</h2>
+          <p>AWS and Flask application for scalable processing and async workflows.</p>
+          <a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">demo</a>
+        </article>
+        <article>
+          <h2>Chicago Crime and Education Dashboard</h2>
+          <p>Interactive geospatial comparison of crime and educational attainment.</p>
+          <a href="https://github.com/cesarnunezh/Crime-Education-Chicago" target="_blank" rel="noreferrer">repository</a>
+        </article>
+      </div>
+    </section>
 
-      <section id="education" class="panel">
-        <div class="panel-top">
-          <span>education</span>
-          <span>training</span>
-        </div>
-        <div class="education-list">
-          <article class="entry">
-            <h3>M.S. in Computational Analysis and Public Policy</h3>
-            <p>The University of Chicago · Sep 2024 - Jun 2026</p>
-          </article>
-          <article class="entry">
-            <h3>B.S. in Economics</h3>
-            <p>University of the Pacific, Lima, Peru · Jan 2013 - Dec 2017</p>
-          </article>
-        </div>
-      </section>
-    </main>
-  </div>
+    <section class="spec">
+      <div class="label">Experience</div>
+      <div class="value stack">
+        <article><h2>DPIC / Data Engineer Intern</h2><p>2025 · Built and optimized a grievance-data pipeline in Odisha.</p></article>
+        <article><h2>Videnza Consultores / Senior Analyst</h2><p>2020 - 2024 · Led data products, evidence repositories, and analysis workflows.</p></article>
+        <article><h2>CPC / Analyst</h2><p>2019 - 2020 · Produced regional governance indicators and benchmarks.</p></article>
+        <article><h2>AC Publica / Project Assistant</h2><p>2018 - 2019 · Supported policy and infrastructure planning through quantitative analysis.</p></article>
+      </div>
+    </section>
+
+    <section class="spec">
+      <div class="label">Education</div>
+      <div class="value stack">
+        <article><h2>M.S. in Computational Analysis and Public Policy</h2><p>The University of Chicago · 2024 - 2026</p></article>
+        <article><h2>B.S. in Economics</h2><p>University of the Pacific, Lima, Peru · 2013 - 2017</p></article>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
