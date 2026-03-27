@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  background: #ffffff;
+  background: #fbfbfc;
   color: #111111;
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -12,15 +12,15 @@ a {
 }
 
 .resume {
-  width: min(calc(100% - 2rem), 860px);
+  width: min(calc(100% - 2rem), 900px);
   margin: 0 auto;
-  padding: 2rem 0 4rem;
+  padding: 1.5rem 0 4rem;
 }
 
 .masthead,
 .row {
-  border-top: 2px solid #111111;
-  padding: 1rem 0;
+  border-top: 1px solid #111111;
+  padding: 0.9rem 0;
 }
 
 .masthead {
@@ -33,7 +33,7 @@ a {
 .role,
 .contact,
 .list a {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 
 .micro {
@@ -50,12 +50,14 @@ p {
 }
 
 h1 {
-  font-size: clamp(2.6rem, 8vw, 4.5rem);
-  line-height: 0.95;
+  font-size: clamp(2.2rem, 6vw, 3.7rem);
+  line-height: 1;
 }
 
 .role {
-  margin-top: 0.5rem;
+  margin-top: 0.35rem;
+  color: #434343;
+  font-size: 1.02rem;
 }
 
 .contact {
@@ -69,30 +71,37 @@ h1 {
 
 .row {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 130px 1fr;
   gap: 1rem;
 }
 
+.row h2 {
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .row > p {
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
 .list {
   display: grid;
-  gap: 0.9rem;
+  gap: 0.75rem;
 }
 
 .list article {
-  padding-top: 0.2rem;
+  padding-top: 0.15rem;
 }
 
 .list h3 {
-  font-size: 1rem;
+  font-size: 0.98rem;
   margin-bottom: 0.25rem;
 }
 
 .list p {
-  line-height: 1.7;
+  line-height: 1.65;
+  color: #434343;
 }
 
 .list a {
