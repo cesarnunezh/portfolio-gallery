@@ -1,22 +1,23 @@
 :root {
-  --bg: #0f3d43;
-  --bg-2: #0b262a;
-  --surface: #f5efe3;
-  --surface-soft: #f0e4cf;
-  --text: #172224;
-  --muted: #4f615f;
-  --accent: #f28f3b;
-  --accent-2: #0c6a73;
+  --bg: #dff5f8;
+  --bg-2: #c5edf2;
+  --surface: #ffffff;
+  --surface-soft: #edfaff;
+  --text: #0b1f2a;
+  --muted: #4b6570;
+  --accent: #0067ff;
+  --accent-2: #00a7b7;
 }
 
 * { box-sizing: border-box; }
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top right, rgba(242, 143, 59, 0.18), transparent 24%),
+    radial-gradient(circle at top right, rgba(0, 103, 255, 0.14), transparent 24%),
+    radial-gradient(circle at 10% 20%, rgba(0, 167, 183, 0.14), transparent 18%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
   color: var(--text);
-  font-family: "Public Sans", sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -41,7 +42,8 @@ a { color: inherit; text-decoration: none; }
 .split,
 .timeline article {
   background: var(--surface);
-  border-radius: 30px;
+  border-radius: 18px;
+  border: 1px solid rgba(11, 31, 42, 0.08);
 }
 
 .hero-copy,
@@ -69,20 +71,18 @@ p {
   margin: 0;
 }
 
-h1,
-h2 {
-  font-family: "Fraunces", serif;
-  font-weight: 700;
-  line-height: 0.95;
-}
-
 h1 {
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2.8rem, 6vw, 5.6rem);
+  font-weight: 800;
+  line-height: 1;
   margin-top: 0.5rem;
+  letter-spacing: -0.04em;
 }
 
 h2 {
-  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 .intro,
@@ -90,7 +90,7 @@ h2 {
 .case-study p,
 .promise p,
 .stat-card {
-  line-height: 1.8;
+  line-height: 1.75;
   color: var(--muted);
 }
 
@@ -117,7 +117,7 @@ h2 {
 }
 
 .secondary {
-  background: rgba(12, 106, 115, 0.12);
+  background: rgba(0, 167, 183, 0.12);
   color: var(--accent-2);
 }
 
@@ -131,13 +131,13 @@ h2 {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 22px;
+  border-radius: 12px;
 }
 
 .stat-card {
   padding: 1rem;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.55);
+  border-radius: 12px;
+  background: rgba(0, 103, 255, 0.06);
 }
 
 .stat-card strong {
@@ -149,8 +149,9 @@ h2 {
 .section {
   margin-top: 1rem;
   padding: 1.4rem;
-  border-radius: 30px;
-  background: linear-gradient(180deg, var(--surface) 0%, #fff8ef 100%);
+  border-radius: 18px;
+  border: 1px solid rgba(11, 31, 42, 0.08);
+  background: linear-gradient(180deg, var(--surface) 0%, #f4fdff 100%);
 }
 
 .promise {
@@ -161,7 +162,7 @@ h2 {
 
 .promise article {
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.78);
 }
 
 .section-head {
@@ -181,14 +182,15 @@ h2 {
   gap: 0.8rem;
   align-content: start;
   min-height: 220px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.84);
 }
 
 .case-study a {
   margin-top: auto;
   width: fit-content;
-  background: #ffffff;
-  color: var(--accent-2);
+  background: #0b1f2a;
+  color: #ffffff;
+  border-radius: 999px;
 }
 
 .split {
@@ -203,12 +205,13 @@ h2 {
 }
 
 .timeline article {
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.76);
 }
 
 .timeline h3 {
   font-size: 1.2rem;
   margin: 0.35rem 0 0.45rem;
+  letter-spacing: -0.02em;
 }
 
 :focus-visible {
