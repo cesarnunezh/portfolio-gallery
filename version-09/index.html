@@ -16,6 +16,11 @@
       <p class="map-label">Version 09 / Transit Map</p>
       <h1>Cesar Nunez portfolio network</h1>
       <p class="map-summary">A transit-style view of projects, experience, and education, with the main information kept explicit instead of symbolic.</p>
+      <section class="route-guide" aria-label="Map legend">
+        <article><span class="guide-dot blue-dot"></span><div><strong>Blue line</strong><p>Profile and education</p></div></article>
+        <article><span class="guide-dot orange-dot"></span><div><strong>Orange line</strong><p>Projects and shipped work</p></div></article>
+        <article><span class="guide-dot red-dot"></span><div><strong>Red line</strong><p>Experience and career path</p></div></article>
+      </section>
       <div class="map-links">
         <a href="https://cesarnunezh.netlify.app/files/CV_CNH_202601.pdf" target="_blank" rel="noreferrer">Resume</a>
         <a href="https://github.com/cesarnunezh" target="_blank" rel="noreferrer">GitHub</a>
@@ -29,12 +34,14 @@
       <div class="route red"></div>
 
       <article class="station summary">
+        <p class="station-code">B-01</p>
         <span class="line blue-dot"></span>
         <h2>Summary</h2>
-        <p>Data engineer and web developer with a background in economics and public policy.</p>
+        <p>Data engineer and web developer with a background in economics and public policy, focused on public-interest tools and reliable data products.</p>
       </article>
 
       <article class="station project p1">
+        <p class="station-code">O-01</p>
         <span class="line orange-dot"></span>
         <h2>Open Peru</h2>
         <p>Legislative-data platform for voting records, bills, and party behavior.</p>
@@ -42,6 +49,7 @@
       </article>
 
       <article class="station project p2">
+        <p class="station-code">R-01</p>
         <span class="line red-dot"></span>
         <h2>Odisha's Grievance Redressal System</h2>
         <p>Async ETL pipeline automating ingestion and validation across 1M+ complaints.</p>
@@ -49,6 +57,7 @@
       </article>
 
       <article class="station project p3">
+        <p class="station-code">B-02</p>
         <span class="line blue-dot"></span>
         <h2>Genomics Annotation Service</h2>
         <p>Cloud-native application using AWS, Flask, APIs, and async workflows.</p>
@@ -56,6 +65,7 @@
       </article>
 
       <article class="station project p4">
+        <p class="station-code">O-02</p>
         <span class="line orange-dot"></span>
         <h2>Chicago Crime and Education Dashboard</h2>
         <p>Interactive geospatial comparison of crime and educational attainment.</p>
@@ -63,6 +73,7 @@
       </article>
 
       <article class="station experience">
+        <p class="station-code">R-02</p>
         <span class="line red-dot"></span>
         <h2>Experience</h2>
         <ul>
@@ -74,12 +85,28 @@
       </article>
 
       <article class="station education">
+        <p class="station-code">B-03</p>
         <span class="line blue-dot"></span>
         <h2>Education</h2>
         <ul>
           <li>2024 - 2026 · M.S. in Computational Analysis and Public Policy · The University of Chicago</li>
           <li>2013 - 2017 · B.S. in Economics · University of the Pacific, Lima, Peru</li>
         </ul>
+      </article>
+    </section>
+
+    <section class="route-directory" aria-label="Route directory">
+      <article>
+        <p class="directory-label">Blue line</p>
+        <p>Summary, Genomics Annotation Service, Education.</p>
+      </article>
+      <article>
+        <p class="directory-label">Orange line</p>
+        <p>Open Peru, Chicago Crime and Education Dashboard.</p>
+      </article>
+      <article>
+        <p class="directory-label">Red line</p>
+        <p>Odisha project and the full experience track.</p>
       </article>
     </section>
   </main>

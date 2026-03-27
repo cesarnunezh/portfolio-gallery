@@ -31,7 +31,9 @@ a { color: inherit; text-decoration: none; }
 
 .map-label,
 .station .line,
-.map-links a {
+.map-links a,
+.station-code,
+.directory-label {
   font-family: "Space Mono", monospace;
 }
 
@@ -52,6 +54,41 @@ h1 {
   max-width: 60ch;
   line-height: 1.7;
   color: var(--muted);
+}
+
+.route-guide {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.route-guide article,
+.route-directory article {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 0.7rem;
+  align-items: start;
+  padding: 0.85rem;
+  border: 2px solid rgba(19, 32, 36, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.route-guide strong {
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.route-guide p,
+.route-directory p {
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.guide-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: 0.15rem;
 }
 
 h2 {
@@ -124,6 +161,12 @@ h2 {
   background: rgba(255, 255, 255, 0.96);
 }
 
+.station-code {
+  margin-bottom: 0.55rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
 .station p,
 .station li {
   line-height: 1.75;
@@ -155,7 +198,27 @@ h2 {
 .experience { bottom: 10%; left: 8%; width: 420px; }
 .education { bottom: 8%; right: 10%; width: 380px; }
 
+.route-directory {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.directory-label {
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  color: var(--ink);
+}
+
 @media (max-width: 980px) {
+  .route-guide,
+  .route-directory {
+    grid-template-columns: 1fr;
+  }
+
   .map-board {
     min-height: auto;
     padding: 1rem;
