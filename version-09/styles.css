@@ -48,6 +48,12 @@ h1 {
   font-size: clamp(2.8rem, 6vw, 5rem);
 }
 
+.map-summary {
+  max-width: 60ch;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
 h2 {
   font-size: 1.5rem;
 }
@@ -112,7 +118,7 @@ h2 {
 
 .station {
   position: absolute;
-  width: 290px;
+  width: 320px;
   padding: 1rem;
   border: 2px solid var(--ink);
   background: rgba(255, 255, 255, 0.96);
@@ -143,9 +149,9 @@ h2 {
 
 .summary { top: 8%; left: 8%; }
 .p1 { top: 31%; left: 10%; }
-.p2 { top: 14%; right: 12%; }
+.p2 { top: 12%; right: 8%; }
 .p3 { top: 53%; left: 23%; }
-.p4 { top: 46%; right: 9%; }
+.p4 { top: 44%; right: 6%; }
 .experience { bottom: 10%; left: 8%; width: 420px; }
 .education { bottom: 8%; right: 10%; width: 380px; }
 

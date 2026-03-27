@@ -108,6 +108,11 @@ ul {
   gap: 0.7rem;
 }
 
+.note:hover,
+.note:focus-within {
+  transform: rotate(0deg) translateY(-2px);
+}
+
 .projects li {
   display: grid;
   gap: 0.35rem;

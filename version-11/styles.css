@@ -1,142 +1,180 @@
 :root {
-  --paper: #e6d3ad;
-  --paper-2: #d4bc8e;
-  --ink: #2b2216;
-  --muted: #685740;
-  --stamp: #a5312d;
-  --line: rgba(43, 34, 22, 0.28);
+  --paper: #fcfbf7;
+  --paper-2: #f1ecdf;
+  --ink: #1c1a17;
+  --muted: #5e564a;
+  --line: rgba(28, 26, 23, 0.16);
+  --accent: #0f4c81;
 }
 
 * { box-sizing: border-box; }
+
 body {
   margin: 0;
-  background:
-    linear-gradient(180deg, #d9c49c 0%, #b99563 100%);
   color: var(--ink);
-  font-family: "Courier Prime", monospace;
-}
-
-a { color: inherit; text-decoration: none; }
-
-.dossier {
-  width: min(calc(100% - 1rem), 1280px);
-  margin: 0 auto;
-  padding: 1rem 0 2rem;
-}
-
-.passport,
-.ticket,
-.page {
+  font-family: "Libre Franklin", sans-serif;
   background: linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%);
-  border: 2px solid var(--ink);
 }
 
-.passport {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 1rem;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.journal {
+  width: min(calc(100% - 1.5rem), 1200px);
+  margin: 0 auto;
+  padding: 1rem 0 3rem;
+}
+
+.masthead,
+.lead-story,
+.columns {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+}
+
+.masthead {
   padding: 1rem;
+  text-align: center;
+  border-bottom-width: 2px;
 }
 
-.code,
-.ticket-label,
-.section-code,
-.document-meta span {
+.masthead p,
+.kicker,
+.lead-links a {
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  font-size: 0.8rem;
+  font-size: 0.76rem;
 }
 
-h1, h2, p { margin: 0; }
+h1, h2, h3, p {
+  margin: 0;
+}
 
-h1, h2 {
-  font-family: "Oswald", sans-serif;
-  line-height: 0.95;
+h1, h2, h3 {
+  font-family: "Libre Baskerville", serif;
 }
 
 h1 {
-  font-size: clamp(3rem, 7vw, 6.2rem);
-  margin: 0.5rem 0 0.6rem;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  margin: 0.45rem 0;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  line-height: 1.14;
 }
 
-.subtitle,
-.entry p,
-.ticket p {
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.lead-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) 320px;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.kicker {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.deck,
+.story p,
+.brief p,
+.side-note {
   line-height: 1.75;
   color: var(--muted);
 }
 
-.document-meta {
-  display: grid;
-  gap: 0.8rem;
-  align-content: start;
-  justify-items: start;
+.deck {
+  margin-top: 0.9rem;
+  font-size: 1.04rem;
 }
 
-.document-meta span {
-  padding: 0.55rem 0.75rem;
-  border: 2px solid var(--stamp);
-  color: var(--stamp);
-  background: rgba(165, 49, 45, 0.08);
+.lead-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.2rem;
 }
 
-.tickets {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.ticket {
-  position: relative;
-  padding: 1rem;
-}
-
-.ticket::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 28px;
-  bottom: 0;
-  width: 0;
-  border-right: 2px dashed var(--line);
-}
-
-.ledger {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr 0.9fr;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.page {
-  padding: 1rem;
-}
-
-.section-code {
-  margin: 0 0 0.8rem;
-}
-
-.entry {
-  padding: 0.9rem 0;
-  border-top: 1px dashed var(--line);
-}
-
-.entry a {
+.lead-links a,
+.story a {
   display: inline-flex;
-  margin-top: 0.45rem;
-  padding: 0.35rem 0.55rem;
+  align-items: center;
+  padding: 0.65rem 0.85rem;
   border: 1px solid var(--ink);
 }
 
+.portrait-column {
+  display: grid;
+  gap: 1rem;
+}
+
+.portrait-column img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.brief {
+  display: grid;
+  gap: 0.7rem;
+  padding-top: 0.2rem;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr 0.85fr;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.column {
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+}
+
+.story {
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
+}
+
+.story a {
+  margin-top: 0.7rem;
+  width: fit-content;
+}
+
+.compact h3 {
+  font-size: 1.05rem;
+}
+
+.divider {
+  height: 1px;
+  background: var(--line);
+  margin: 0.25rem 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 @media (max-width: 980px) {
-  .passport,
-  .tickets,
-  .ledger {
+  .lead-story,
+  .columns {
     grid-template-columns: 1fr;
+  }
+
+  .portrait-column {
+    max-width: 280px;
   }
 }

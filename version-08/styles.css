@@ -39,6 +39,7 @@ a { color: inherit; text-decoration: none; }
 .brand {
   font-weight: 800;
   margin-bottom: 1rem;
+  letter-spacing: -0.02em;
 }
 
 .sidebar nav {
@@ -50,6 +51,11 @@ a { color: inherit; text-decoration: none; }
   padding: 0.8rem 0.9rem;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.7);
+}
+
+.sidebar a:hover,
+.sidebar a:focus-visible {
+  background: #ffffff;
 }
 
 .phone {
