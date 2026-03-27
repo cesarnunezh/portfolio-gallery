@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Cesar Nunez portfolio: data engineer and web developer building data-driven applications for public impact."
+  >
+  <title>Cesar Nunez | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="brand" href="#top">Cesar Nunez</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Editorial Version 01</p>
+          <h1>Data engineer and web developer building public-interest tools from messy real-world data.</h1>
+          <p class="hero-summary">
+            I design ETL pipelines, APIs, and data products that make complex public-sector information usable,
+            transparent, and operational. My work sits at the intersection of data engineering, civic tech, and web development.
+          </p>
+          <div class="hero-actions">
+            <a class="button-primary" href="https://cesarnunezh.netlify.app/files/CV_CNH_202601.pdf" target="_blank" rel="noreferrer">View Resume</a>
+            <a class="button-secondary" href="#projects">Featured Projects</a>
+          </div>
+          <ul class="meta-list" aria-label="Profiles">
+            <li><span>GitHub</span><a href="https://github.com/cesarnunezh" target="_blank" rel="noreferrer">github.com/cesarnunezh</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/cesar-nunez-huaman/" target="_blank" rel="noreferrer">cesar-nunez-huaman</a></li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel" aria-label="Profile">
+          <figure class="portrait-card">
+            <img
+              src="https://cesarnunezh.netlify.app/images/profile-img.jpg"
+              alt="Portrait of Cesar Nunez"
+            >
+          </figure>
+          <div class="hero-note">
+            <p class="note-label">Current focus</p>
+            <p>
+              Building <strong>Open Peru</strong>, a civic-tech platform that turns unstructured legislative data
+              into clearer information about voting records, bills, and party behavior.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="section-kicker">About</p>
+          <h2>Technical depth shaped by economics, policy, and real delivery constraints.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="prose-card">
+            <p>
+              I am a data engineer and web developer with a background in economics and public policy. I build systems that
+              transform fragmented data into dependable pipelines, APIs, dashboards, and decision-ready tools.
+            </p>
+            <p>
+              Most of my work has been in civic-tech and public-sector contexts, where scale, transparency, and data quality
+              matter as much as the interface. I care about making technically solid products that remain legible to the people using them.
+            </p>
+          </div>
+          <div class="stack-card">
+            <p class="stack-title">Recent technologies</p>
+            <ul class="tag-list">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>FastAPI</li>
+              <li>Flask</li>
+              <li>Docker</li>
+              <li>GitHub Actions</li>
+              <li>AWS</li>
+              <li>Pydantic</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading">
+          <p class="section-kicker">Featured Projects</p>
+          <h2>Selected work focused on public systems, automation, and usable data products.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <p class="project-index">01</p>
+            <h3>Open Peru</h3>
+            <p>
+              Platform for tracking voting records, bills, and party dynamics using public legislative data to improve political accountability in Peru.
+            </p>
+            <ul class="tag-list">
+              <li>Web scraping</li>
+              <li>SQL</li>
+              <li>Pydantic</li>
+              <li>Data modeling</li>
+            </ul>
+            <p class="project-link-row">
+              <a href="https://github.com/cesarnunezh/OpenPeru" target="_blank" rel="noreferrer">View project</a>
+            </p>
+          </article>
+
+          <article class="project-card">
+            <p class="project-index">02</p>
+            <h3>Odisha's Grievance Redressal System</h3>
+            <p>
+              Asynchronous ETL pipeline for Odisha's Janasunani platform, automating ingestion and validation of more than one million citizen complaints.
+            </p>
+            <ul class="tag-list">
+              <li>Python</li>
+              <li>asyncio</li>
+              <li>httpx</li>
+              <li>Docker</li>
+            </ul>
+            <p class="project-link-row">
+              <a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">Watch demo</a>
+            </p>
+          </article>
+
+          <article class="project-card">
+            <p class="project-index">03</p>
+            <h3>Genomics Annotation Service</h3>
+            <p>
+              Cloud-native web application built on AWS and Flask to support scalable file processing, asynchronous workflows, and tiered user access.
+            </p>
+            <ul class="tag-list">
+              <li>AWS</li>
+              <li>Flask</li>
+              <li>REST APIs</li>
+              <li>Cloud architecture</li>
+            </ul>
+            <p class="project-link-row">
+              <a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">Watch demo</a>
+            </p>
+          </article>
+
+          <article class="project-card">
+            <p class="project-index">04</p>
+            <h3>Chicago Crime and Education Dashboard</h3>
+            <p>
+              Interactive map exploring the relationship between crime rates and educational attainment in Chicago using Python-based visualization tooling.
+            </p>
+            <ul class="tag-list">
+              <li>Data visualization</li>
+              <li>Dash</li>
+              <li>Altair</li>
+              <li>Geospatial analysis</li>
+            </ul>
+            <p class="project-link-row">
+              <a href="https://github.com/cesarnunezh/Crime-Education-Chicago" target="_blank" rel="noreferrer">View project</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience">
+        <div class="section-heading">
+          <p class="section-kicker">Experience</p>
+          <h2>A progression from policy analysis into full data product and engineering delivery.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <p>Jun 2025 - Aug 2025</p>
+              <span>Odisha, India</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Data Engineer Intern</h3>
+              <p class="timeline-org">Data, Policy and Innovation Centre (DPIC)</p>
+              <ul>
+                <li>Built an asynchronous ETL pipeline for Odisha's Janasunani grievance system and automated validation across 1M+ complaints.</li>
+                <li>Cut extraction time by 75% through an asyncio and httpx orchestration layer.</li>
+                <li>Improved reliability with typed validation and SQLAlchemy-backed models.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <p>Jul 2020 - Aug 2024</p>
+              <span>Lima, Peru</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Senior Analyst</h3>
+              <p class="timeline-org">Videnza Consultores</p>
+              <ul>
+                <li>Led data-driven policy projects spanning public-sector modernization, program evaluation, and national statistics products.</li>
+                <li>Designed Peru's Urban Poverty Reduction Strategy using systematic evidence review and PCA analysis over 500K+ household records.</li>
+                <li>Built indicator repositories, automated extraction workflows, and dashboards to improve access to evidence for decision makers.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <p>Jul 2019 - Jun 2020</p>
+              <span>Lima, Peru</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Analyst</h3>
+              <p class="timeline-org">Peruvian Private Competitiveness Council (CPC)</p>
+              <ul>
+                <li>Produced data products and policy analysis to benchmark public-management performance across Peru's 25 regions.</li>
+                <li>Led annual updates of the Regional Public Management Index using survey and administrative data to compute 17 governance KPIs.</li>
+                <li>Developed evidence-based proposals on infrastructure regulation and housing subsidies.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <p>Jan 2018 - Jul 2019</p>
+              <span>Lima, Peru</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Project Assistant</h3>
+              <p class="timeline-org">AC Publica (APOYO Consultoria)</p>
+              <ul>
+                <li>Supported national policy design and infrastructure planning through research, quantitative analysis, and modeling.</li>
+                <li>Contributed to Peru's National Agrarian Innovation Policy through data analysis and research synthesis.</li>
+                <li>Revised demand and supply estimates for 12 regional airport master plans using econometric modeling.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education">
+        <div class="section-heading">
+          <p class="section-kicker">Education</p>
+          <h2>Formal training in public policy, computation, and economics.</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card">
+            <p class="education-date">Sep 2024 - Jun 2026</p>
+            <h3>Master of Science in Computational Analysis and Public Policy</h3>
+            <p>The University of Chicago</p>
+          </article>
+          <article class="education-card">
+            <p class="education-date">Jan 2013 - Dec 2017</p>
+            <h3>Bachelor of Science in Economics</h3>
+            <p>University of the Pacific, Lima, Peru</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Designed as a pure HTML/CSS portfolio prototype for the first redesign direction.</p>
+    </footer>
+  </div>
+</body>
+</html>
