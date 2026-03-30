@@ -73,8 +73,8 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(3.2rem, 7vw, 6.7rem);
-  line-height: 0.92;
+  font-size: clamp(2.7rem, 6vw, 5.2rem);
+  line-height: 0.94;
 }
 
 h2 {
@@ -84,6 +84,15 @@ h2 {
 
 h3 {
   font-size: 1.3rem;
+}
+
+.nameplate {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--yellow);
 }
 
 .hero-main {
@@ -103,8 +112,8 @@ h3 {
 
 .summary {
   max-width: 54ch;
-  margin-top: 1rem;
-  font-size: 1.03rem;
+  margin-top: 0.8rem;
+  font-size: 0.98rem;
 }
 
 .portrait {
