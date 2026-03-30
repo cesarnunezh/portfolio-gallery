@@ -1,13 +1,11 @@
 :root {
-  --paper: #f3f1ed;
-  --paper-2: #e5ecf3;
-  --panel: rgba(255, 255, 255, 0.82);
-  --surface-soft: rgba(245, 248, 251, 0.92);
-  --ink: #183044;
-  --muted: #5b6c7b;
-  --line: rgba(24, 48, 68, 0.08);
-  --accent: #2a6f9e;
-  --accent-soft: #d6e6f2;
+  --paper: #ecf4fb;
+  --paper-2: #d8eaf8;
+  --panel: rgba(255, 255, 255, 0.8);
+  --ink: #11314f;
+  --muted: #4e6780;
+  --line: rgba(17, 49, 79, 0.2);
+  --accent: #0071c5;
 }
 
 *,
@@ -21,8 +19,10 @@ body {
   color: var(--ink);
   font-family: "Space Grotesk", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(42, 111, 158, 0.08), transparent 20%),
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px),
     linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%);
+  background-size: 32px 32px, 32px 32px, auto;
 }
 
 a {
@@ -38,16 +38,14 @@ a {
 
 .panel,
 .portrait img {
-  border: 1px solid rgba(24, 48, 68, 0.14);
+  border: 2px solid var(--ink);
   background: var(--panel);
-  box-shadow: 0 16px 42px rgba(24, 48, 68, 0.08);
-  border-radius: 24px;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) 280px 220px;
-  gap: 1.1rem;
+  grid-template-columns: 220px minmax(0, 1fr) 300px;
+  gap: 1rem;
 }
 
 .portrait {
@@ -65,7 +63,7 @@ a {
 .projects,
 .experience,
 .education {
-  padding: 1.15rem;
+  padding: 1rem;
 }
 
 .code,
@@ -88,9 +86,9 @@ p {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
   line-height: 0.98;
-  margin-top: 0.4rem;
+  margin-top: 0.35rem;
 }
 
 h2 {
@@ -121,8 +119,7 @@ h2 {
 .meta {
   display: grid;
   align-content: start;
-  gap: 0.7rem;
-  background: var(--surface-soft);
+  gap: 0.65rem;
 }
 
 .matrix {
@@ -137,7 +134,10 @@ h2 {
 }
 
 .head {
-  margin-bottom: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .project-grid {
@@ -149,16 +149,14 @@ h2 {
 .project-grid article,
 .stack article {
   display: grid;
-  gap: 0.6rem;
-  padding: 1rem;
-  border: 1px solid rgba(24, 48, 68, 0.12);
-  border-left: 4px solid var(--accent-soft);
-  background: rgba(255, 255, 255, 0.88);
-  border-radius: 18px;
+  gap: 0.55rem;
+  padding: 0.9rem;
+  border: 1px dashed var(--ink);
+  background: rgba(255, 255, 255, 0.74);
 }
 
 .project-grid article {
-  min-height: 180px;
+  min-height: 190px;
 }
 
 .project-grid a {
@@ -187,5 +185,9 @@ h2 {
   .project-grid,
   .compact {
     grid-template-columns: 1fr;
+  }
+
+  .head {
+    flex-direction: column;
   }
 }

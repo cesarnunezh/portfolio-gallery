@@ -1,14 +1,13 @@
 :root {
-  --bg: #dfeaf4;
-  --bg-2: #cfdeea;
-  --window: rgba(248, 251, 254, 0.95);
-  --window-soft: #eef5fa;
-  --border: #1c3447;
+  --bg: #dce7f2;
+  --bg-2: #c8d8e8;
+  --window: #f7fafc;
+  --window-soft: #edf4fa;
+  --border: #19334a;
   --text: #15273a;
   --muted: #506577;
-  --accent: #1d8fb2;
+  --accent: #2f9cbf;
   --highlight: #ffcf62;
-  --line: rgba(28, 52, 71, 0.08);
 }
 
 *,
@@ -25,10 +24,7 @@ body {
   margin: 0;
   background:
     radial-gradient(circle at top left, rgba(47, 156, 191, 0.16), transparent 20%),
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
-  background-size: auto, 40px 40px, 40px 40px, auto;
   color: var(--text);
   font-family: "Sora", sans-serif;
 }
@@ -46,9 +42,9 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.85rem 1rem;
-  border-bottom: 1px solid rgba(28, 52, 71, 0.18);
-  background: rgba(255, 255, 255, 0.84);
+  padding: 0.8rem 1rem;
+  border-bottom: 2px solid var(--border);
+  background: rgba(255, 255, 255, 0.76);
   font-family: "IBM Plex Mono", monospace;
 }
 
@@ -68,10 +64,9 @@ a {
 }
 
 .window {
-  border: 1px solid rgba(28, 52, 71, 0.18);
+  border: 2px solid var(--border);
   background: var(--window);
-  box-shadow: 0 14px 34px rgba(25, 51, 74, 0.11);
-  backdrop-filter: blur(8px);
+  box-shadow: 10px 10px 0 rgba(25, 51, 74, 0.14);
 }
 
 .window-bar {
@@ -79,8 +74,8 @@ a {
   justify-content: space-between;
   gap: 1rem;
   padding: 0.55rem 0.8rem;
-  border-bottom: 1px solid rgba(28, 52, 71, 0.14);
-  background: #e5eef5;
+  border-bottom: 2px solid var(--border);
+  background: #d7e5f0;
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.88rem;
 }
@@ -134,47 +129,28 @@ h2 {
   color: var(--muted);
 }
 
-.briefing { grid-column: span 7; }
-.status { grid-column: span 5; }
-.projects { grid-column: 1 / -1; }
-.experience { grid-column: span 7; }
-.education { grid-column: span 5; }
+.briefing { grid-column: span 6; }
+.portrait { grid-column: span 3; margin-top: 1.8rem; }
+.status { grid-column: span 3; margin-top: 1rem; }
+.projects { grid-column: span 7; }
+.experience { grid-column: span 5; }
+.education { grid-column: span 5; margin-top: -1rem; }
 
-.brief-points {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.8rem;
-  margin-top: 1rem;
+.image {
+  padding: 0;
 }
 
-.brief-points article {
-  display: grid;
-  gap: 0.35rem;
-  padding: 0.8rem;
-  border: 1px solid rgba(28, 52, 71, 0.12);
-  background: var(--window-soft);
-}
-
-.status-top {
-  display: grid;
-  grid-template-columns: 130px 1fr;
-  gap: 0.9rem;
-  align-items: start;
-  margin-bottom: 1rem;
-}
-
-.status-top img {
+.image img {
   width: 100%;
+  display: block;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 0.6rem;
 }
 
 .link-stack {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 0.7rem;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 }
 
 .link-stack a,
@@ -182,12 +158,11 @@ h2 {
   display: inline-flex;
   width: fit-content;
   padding: 0.55rem 0.8rem;
-  border: 1px solid rgba(28, 52, 71, 0.18);
+  border: 2px solid var(--border);
   background: var(--highlight);
   color: #1d2630;
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.84rem;
-  letter-spacing: 0.02em;
 }
 
 .card-grid {
@@ -201,12 +176,12 @@ h2 {
   display: grid;
   gap: 0.6rem;
   padding: 0.9rem;
-  border: 1px solid rgba(28, 52, 71, 0.12);
+  border: 2px dashed var(--border);
   background: var(--window-soft);
 }
 
 .card-grid article {
-  min-height: 0;
+  min-height: 210px;
 }
 
 .card-grid a {
@@ -231,21 +206,21 @@ h2 {
   outline-offset: 3px;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 980px) {
   .dashboard {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .briefing,
+  .portrait,
   .status,
   .projects,
   .experience,
   .education {
-    grid-column: 1;
+    grid-column: auto;
+    margin-top: 0;
   }
 
-  .brief-points,
-  .status-top,
   .card-grid,
   .stack article,
   .compact article {
@@ -254,6 +229,11 @@ h2 {
 }
 
 @media (max-width: 640px) {
+  .topbar,
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
   .topbar {
     align-items: flex-start;
     flex-direction: column;
