@@ -1,11 +1,13 @@
 :root {
-  --bg: #f4f6f8;
+  --bg: #eef2f7;
   --surface: #ffffff;
-  --surface-2: #eef3f7;
-  --text: #15202b;
-  --muted: #5a6977;
-  --line: #d5dde5;
-  --accent: #0f62fe;
+  --surface-2: #f6f8fb;
+  --surface-3: #e7eef8;
+  --text: #172331;
+  --muted: #566678;
+  --line: #d8e0e8;
+  --accent: #2757c7;
+  --accent-soft: #dbe5fb;
 }
 
 *,
@@ -16,7 +18,9 @@
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, #f7f9fb 0%, var(--bg) 100%);
+  background:
+    radial-gradient(circle at top right, rgba(39, 87, 199, 0.08), transparent 24%),
+    linear-gradient(180deg, #f7f9fb 0%, var(--bg) 100%);
   color: var(--text);
   font-family: "Public Sans", sans-serif;
 }
@@ -36,13 +40,15 @@ a {
 .panel {
   background: var(--surface);
   border: 1px solid var(--line);
+  box-shadow: 0 18px 50px rgba(23, 35, 49, 0.06);
 }
 
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) 280px;
   gap: 1rem;
-  padding: 1.2rem;
+  padding: 1.35rem;
+  border-radius: 24px;
 }
 
 .micro,
@@ -54,6 +60,10 @@ a {
   font-size: 0.78rem;
   font-weight: 800;
   color: var(--accent);
+}
+
+.hero-copy {
+  max-width: 44rem;
 }
 
 h1,
@@ -97,19 +107,24 @@ h2 {
   gap: 1rem;
 }
 
-.quick-card,
+.signal-list,
 .links li,
 .panel article {
   background: var(--surface-2);
   border: 1px solid var(--line);
 }
 
-.quick-card {
+.signal-list {
   padding: 1rem;
+  border-radius: 18px;
 }
 
-.quick-card p:last-child {
-  margin-top: 0.45rem;
+.signal-list ul {
+  margin: 0.7rem 0 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.45rem;
+  color: var(--muted);
 }
 
 .links {
@@ -121,22 +136,32 @@ h2 {
 }
 
 .links li {
-  padding: 0.8rem 0.9rem;
+  border-radius: 18px;
+  background: var(--surface-3);
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.95rem 1rem;
+  font-weight: 700;
 }
 
 .section {
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 104px 1fr;
   gap: 1rem;
   margin-top: 1rem;
 }
 
 .section-label {
-  padding-top: 0.8rem;
+  padding-top: 1rem;
 }
 
 .panel {
-  padding: 1rem;
+  padding: 1.05rem;
+  border-radius: 24px;
 }
 
 .grid {
@@ -150,6 +175,7 @@ h2 {
   display: grid;
   gap: 0.55rem;
   padding: 1rem;
+  border-radius: 18px;
 }
 
 .grid article {
@@ -164,6 +190,13 @@ h2 {
 .grid a {
   margin-top: auto;
   color: var(--accent);
+}
+
+.item-meta {
+  color: var(--accent);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .list {
