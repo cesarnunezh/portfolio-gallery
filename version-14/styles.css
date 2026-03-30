@@ -176,7 +176,7 @@ h3 {
 .paper { background: var(--paper); color: var(--ink); }
 
 .split {
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 1fr;
 }
 
 .list {
