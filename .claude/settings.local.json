@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:cesarnunezh.netlify.app)"
+      "WebFetch(domain:cesarnunezh.netlify.app)",
+      "Bash(sed -i 's/Version 20/Version 21/g' //wsl.localhost/Ubuntu/home/canun/capp/DBS/assignment1/version-21/index.html)",
+      "Bash(sed -i 's/Version 20/Version 22/g' //wsl.localhost/Ubuntu/home/canun/capp/DBS/assignment1/version-22/index.html)",
+      "Bash(sed -i 's/Version 21/Version 23/g' //wsl.localhost/Ubuntu/home/canun/capp/DBS/assignment1/version-23/index.html)",
+      "Bash(sed -i 's/Version 22/Version 24/g' //wsl.localhost/Ubuntu/home/canun/capp/DBS/assignment1/version-24/index.html)"
     ]
   }
 }

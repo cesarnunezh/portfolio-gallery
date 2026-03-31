@@ -21,7 +21,7 @@
         <img src="https://cesarnunezh.netlify.app/images/profile-img.jpg" alt="Portrait of Cesar Nunez">
       </figure>
       <section class="intro panel">
-        <p class="code">Version 21 / Technical Control Sheet + Editorial + Rich Projects</p>
+        <p class="code">Version 21 / Technical Control Sheet + Editorial</p>
         <h1>Cesar Nunez</h1>
         <p class="role">Data Engineer / Web Developer</p>
         <p class="credential">M.S. Computational Analysis and Public Policy · University of Chicago</p>
@@ -41,90 +41,63 @@
 
     <section class="matrix">
       <section class="panel projects">
-        <div class="head"><p class="code">Projects</p><p class="code">4 active references</p></div>
+        <div class="head"><p class="code">Projects</p><p class="code">6 active references</p></div>
 
-        <!-- Featured project: full-width editorial with stat + badges -->
-        <article class="featured-project">
-          <div class="feat-content">
-            <figure class="feat-img">
-              <img src="https://cesarnunezh.netlify.app/images/projects/janasunani.png" alt="Odisha Grievance System screenshot">
-            </figure>
-            <div class="feat-top">
-              <p class="code">Featured · ETL Pipeline</p>
-              <div class="tech-tags">
-                <span>Python</span><span>Pydantic</span><span>SQS</span><span>AWS</span>
-              </div>
-            </div>
-            <h2>Odisha's Grievance Redressal System</h2>
-            <p>Reduced manual validation time for 1M+ citizen complaints by building an async ETL pipeline in Python and Pydantic. Deployed to AWS with SQS-based async messaging and automated ingestion from state government data feeds.</p>
-            <a class="feat-link" href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">Watch demo</a>
-          </div>
-          <div class="feat-stat">
-            <div class="stat-num">1M+</div>
-            <div class="stat-label">citizen complaints<br>validated</div>
-          </div>
-        </article>
-
-        <!-- Remaining 3 projects: rich cards in a row -->
-        <div class="project-row">
-
+        <div class="project-grid">
           <article>
             <figure class="card-img">
               <img src="https://cesarnunezh.netlify.app/images/projects/openperu.png" alt="Open Peru screenshot">
             </figure>
-            <div class="card-header">
-              <h2>Open Peru</h2>
-              <span class="project-type">Civic Tech</span>
-            </div>
-            <p>Indexed 3+ years of legislative votes and party behavior into a queryable civic-transparency platform.</p>
-            <div class="tech-tags">
-              <span>Python</span><span>SQL</span><span>PostgreSQL</span>
-            </div>
-            <div class="result-callout">
-              <span class="code">Result</span>
-              <p>3+ years of legislative records made publicly queryable</p>
-            </div>
+            <p class="code">Civic Tech</p>
+            <h2>Open Peru</h2>
+            <p>Platform tracking voting records, bills, and party dynamics using public legislative data to enhance political accountability.</p>
             <a href="https://github.com/cesarnunezh/OpenPeru" target="_blank" rel="noreferrer">repository</a>
           </article>
-
+          <article>
+            <figure class="card-img">
+              <img src="https://cesarnunezh.netlify.app/images/projects/janasunani.png" alt="Odisha Grievance System screenshot">
+            </figure>
+            <p class="code">ETL Pipeline</p>
+            <h2>Odisha Grievance System</h2>
+            <p>Async ETL pipeline automating ingestion and validation of 1M+ citizen complaints, reducing extraction time by 75%.</p>
+            <a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">demo</a>
+          </article>
+          <article>
+            <figure class="card-img">
+              <img src="https://cesarnunezh.netlify.app/images/projects/poverty_pred.png" alt="Poverty Prediction project screenshot">
+            </figure>
+            <p class="code">Machine Learning</p>
+            <h2>Poverty Prediction via Satellite</h2>
+            <p>ML model using satellite imagery to classify households by poverty status, enabling scalable poverty measurement without surveys.</p>
+            <a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">demo</a>
+          </article>
           <article>
             <figure class="card-img">
               <img src="https://cesarnunezh.netlify.app/images/projects/GASArchitecture.png" alt="Genomics Annotation Service architecture">
             </figure>
-            <div class="card-header">
-              <h2>Genomics Annotation Service</h2>
-              <span class="project-type">Cloud Service</span>
-            </div>
-            <p>Scalable annotation service on AWS with async SQS workflows, S3 storage, and role-based access control.</p>
-            <div class="tech-tags">
-              <span>Flask</span><span>Boto3</span><span>SQS</span><span>S3</span>
-            </div>
-            <div class="result-callout">
-              <span class="code">Result</span>
-              <p>Scalable async architecture with RBAC</p>
-            </div>
+            <p class="code">Cloud Service</p>
+            <h2>Genomics Annotation Service</h2>
+            <p>Cloud-native app on AWS using Flask, RESTful APIs, and async messaging for scalable file processing and microservice decoupling.</p>
             <a href="https://github.com/cesarnunezh" target="_blank" rel="noreferrer">repository</a>
           </article>
-
           <article>
             <figure class="card-img">
               <img src="https://cesarnunezh.netlify.app/images/projects/chicago_crime.png" alt="Chicago Crime and Education Dashboard">
             </figure>
-            <div class="card-header">
-              <h2>Chicago Crime &amp; Education</h2>
-              <span class="project-type">Data Viz</span>
-            </div>
-            <p>Mapped crime and educational attainment across 77 Chicago neighborhoods using GeoPandas and D3.</p>
-            <div class="tech-tags">
-              <span>GeoPandas</span><span>D3.js</span><span>Python</span>
-            </div>
-            <div class="result-callout">
-              <span class="code">Result</span>
-              <p>77 neighborhoods analyzed across 3 data sources</p>
-            </div>
+            <p class="code">Data Viz</p>
+            <h2>Chicago Crime &amp; Education</h2>
+            <p>Interactive map visualizing relationships between crime rates and educational attainment across 77 Chicago neighborhoods.</p>
             <a href="https://github.com/cesarnunezh/Crime-Education-Chicago" target="_blank" rel="noreferrer">repository</a>
           </article>
-
+          <article>
+            <figure class="card-img">
+              <img src="https://cesarnunezh.netlify.app/images/projects/housing_deficit.png" alt="Housing Deficit Dashboard screenshot">
+            </figure>
+            <p class="code">Data Viz</p>
+            <h2>Housing Deficit Dashboard</h2>
+            <p>Spatially interactive dashboard displaying housing deficit indicators at the district level in Peru using census data.</p>
+            <a href="https://cesarnunezh.shinyapps.io/DeficitHabitacional/" target="_blank" rel="noreferrer">live demo</a>
+          </article>
         </div>
       </section>
 

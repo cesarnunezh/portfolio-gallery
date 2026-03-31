@@ -6,6 +6,7 @@
   --muted: #4e6780;
   --line: rgba(17, 49, 79, 0.2);
   --accent: #0071c5;
+  --green: #1a8a4a;
 }
 
 *,
@@ -89,8 +90,50 @@ h2 { font-size: 1.18rem; line-height: 1.2; }
 
 .meta { display: grid; align-content: start; gap: 0.65rem; }
 
-.avail { font-size: 0.88rem; color: var(--muted); font-style: italic; }
+/* ── Availability badge ── */
+.avail-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--green);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
 
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+/* ── Stack pills in meta panel ── */
+.stack-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.stack-pills span {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--line);
+  background: rgba(0, 113, 197, 0.07);
+  color: var(--ink);
+}
+
+/* ── CTA email ── */
 .cta-email {
   display: block;
   padding: 0.6rem 1rem;
@@ -105,6 +148,14 @@ h2 { font-size: 1.18rem; line-height: 1.2; }
 }
 .cta-email:hover { background: var(--ink); }
 
+.links-row {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ── Layout ── */
 .matrix {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -153,7 +204,25 @@ h2 { font-size: 1.18rem; line-height: 1.2; }
 }
 
 .project-grid p { line-height: 1.65; color: var(--muted); flex: 1; }
+.project-grid p strong { color: var(--ink); font-weight: 600; }
 .project-grid a { margin-top: auto; font-family: "IBM Plex Mono", monospace; font-size: 0.84rem; }
+
+/* ── Tech pills on cards ── */
+.tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.1rem;
+}
+
+.tech-pills span {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--muted);
+}
 
 /* ── Experience / Education ── */
 .stack { display: grid; gap: 0.8rem; }
