@@ -41,7 +41,7 @@
 
     <section class="matrix">
       <section class="panel projects">
-        <div class="head"><p class="code">Projects</p><p class="code">4 active references</p></div>
+        <div class="head"><p class="code">Projects</p><p class="code">6 active references</p></div>
         <div class="project-grid">
 
           <article>
@@ -52,9 +52,9 @@
               <h2>Open Peru</h2>
               <span class="project-type">Civic Tech</span>
             </div>
-            <p>Indexed 3+ years of legislative votes and party behavior into a queryable civic-transparency platform.</p>
+            <p>Platform tracking voting records, bills, and party dynamics using public legislative data to enhance political accountability.</p>
             <div class="tech-tags">
-              <span>Python</span><span>SQL</span><span>PostgreSQL</span>
+              <span>Python</span><span>SQL</span><span>Pydantic</span>
             </div>
             <div class="result-callout">
               <span class="code">Result</span>
@@ -71,13 +71,32 @@
               <h2>Odisha Grievance System</h2>
               <span class="project-type">ETL Pipeline</span>
             </div>
-            <p>Reduced manual validation time for 1M+ citizen complaints by building an async ETL pipeline.</p>
+            <p>Async ETL pipeline automating ingestion and validation of 1M+ citizen complaints, reducing extraction time by 75%.</p>
             <div class="tech-tags">
-              <span>Python</span><span>Pydantic</span><span>SQS</span><span>AWS</span>
+              <span>Python</span><span>Docker</span><span>Pydantic</span>
             </div>
-            <div class="result-callout highlight">
+            <div class="result-callout">
               <span class="code">Result</span>
-              <p>1M+ complaints validated — manual review eliminated</p>
+              <p>1M+ complaints validated — extraction time cut 75%</p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">demo</a>
+          </article>
+
+          <article>
+            <figure class="card-img">
+              <img src="https://cesarnunezh.netlify.app/images/projects/poverty_pred.png" alt="Poverty Prediction project screenshot">
+            </figure>
+            <div class="card-header">
+              <h2>Poverty Prediction via Satellite</h2>
+              <span class="project-type">Machine Learning</span>
+            </div>
+            <p>ML model using satellite imagery to classify households by poverty status, enabling scalable poverty measurement.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>GeoPandas</span><span>ML</span>
+            </div>
+            <div class="result-callout">
+              <span class="code">Result</span>
+              <p>Scalable poverty classification without household surveys</p>
             </div>
             <a href="https://www.youtube.com/watch?v=vDS_DnzB0eU" target="_blank" rel="noreferrer">demo</a>
           </article>
@@ -90,13 +109,13 @@
               <h2>Genomics Annotation Service</h2>
               <span class="project-type">Cloud Service</span>
             </div>
-            <p>Scalable annotation service on AWS with async SQS workflows, S3 storage, and role-based access control.</p>
+            <p>Cloud-native app on AWS using Flask, RESTful APIs, and async messaging for scalable file processing and microservice decoupling.</p>
             <div class="tech-tags">
-              <span>Flask</span><span>Boto3</span><span>SQS</span><span>S3</span>
+              <span>Flask</span><span>AWS</span><span>JavaScript</span>
             </div>
             <div class="result-callout">
               <span class="code">Result</span>
-              <p>Scalable async architecture with RBAC</p>
+              <p>Scalable async architecture with role-based access control</p>
             </div>
             <a href="https://github.com/cesarnunezh" target="_blank" rel="noreferrer">repository</a>
           </article>
@@ -106,18 +125,37 @@
               <img src="https://cesarnunezh.netlify.app/images/projects/chicago_crime.png" alt="Chicago Crime and Education Dashboard screenshot">
             </figure>
             <div class="card-header">
-              <h2>Chicago Crime & Education</h2>
+              <h2>Chicago Crime &amp; Education</h2>
               <span class="project-type">Data Viz</span>
             </div>
-            <p>Mapped the spatial relationship between violent crime and educational attainment across Chicago neighborhoods.</p>
+            <p>Interactive map visualizing relationships between crime rates and educational attainment across Chicago neighborhoods.</p>
             <div class="tech-tags">
-              <span>GeoPandas</span><span>D3.js</span><span>Python</span>
+              <span>Python</span><span>GeoPandas</span><span>D3.js</span>
             </div>
             <div class="result-callout">
               <span class="code">Result</span>
               <p>77 neighborhoods analyzed across 3 data sources</p>
             </div>
             <a href="https://github.com/cesarnunezh/Crime-Education-Chicago" target="_blank" rel="noreferrer">repository</a>
+          </article>
+
+          <article>
+            <figure class="card-img">
+              <img src="https://cesarnunezh.netlify.app/images/projects/housing_deficit.png" alt="Housing Deficit Dashboard screenshot">
+            </figure>
+            <div class="card-header">
+              <h2>Housing Deficit Dashboard</h2>
+              <span class="project-type">Data Viz</span>
+            </div>
+            <p>Spatially interactive dashboard displaying housing deficit indicators at the district level in Peru using census data.</p>
+            <div class="tech-tags">
+              <span>R</span><span>Shiny</span><span>Census Data</span>
+            </div>
+            <div class="result-callout">
+              <span class="code">Result</span>
+              <p>District-level housing deficit indicators across Peru</p>
+            </div>
+            <a href="https://cesarnunezh.shinyapps.io/DeficitHabitacional/" target="_blank" rel="noreferrer">live demo</a>
           </article>
 
         </div>
