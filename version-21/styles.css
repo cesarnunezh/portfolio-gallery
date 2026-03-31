@@ -90,6 +90,33 @@ h2 { font-size: 1.18rem; line-height: 1.2; }
 
 .head { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 0.8rem; }
 
+/* ── Project images ── */
+.feat-img {
+  margin: 0 0 0.5rem;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.feat-img img {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  display: block;
+}
+
+.card-img {
+  margin: 0;
+  border-bottom: 1px dashed var(--ink);
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
 /* ── Featured project ── */
 .featured-project {
   display: grid;

@@ -187,6 +187,19 @@ h2 {
   background: rgba(255, 255, 255, 0.74);
 }
 
+.card-img {
+  margin: 0;
+  border-bottom: 1px dashed var(--ink);
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
 .card-header {
   display: flex;
   align-items: flex-start;
