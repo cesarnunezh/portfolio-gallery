@@ -207,13 +207,12 @@ h2 { font-size: 1.18rem; line-height: 1.2; }
 .stack p { color: var(--muted); line-height: 1.65; }
 .compact { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
-/* ── Closing CTA footer ── */
-.cta-footer {
-  padding: 1.2rem 1.5rem;
-  margin-top: 0;
+/* ── Availability banner ── */
+.availability-banner {
+  padding: 1rem 1.5rem;
 }
 
-.cta-footer-inner {
+.availability-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -221,19 +220,42 @@ h2 { font-size: 1.18rem; line-height: 1.2; }
   flex-wrap: wrap;
 }
 
-.cta-footer-text {
-  margin-top: 0.35rem;
-  color: var(--muted);
-  line-height: 1.6;
-  max-width: 52ch;
+.avail-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
 }
 
-.cta-footer-links {
+.avail-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22c55e;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+.avail-sub {
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.avail-cta {
   display: flex;
   gap: 0.8rem;
   align-items: center;
   flex-shrink: 0;
   flex-wrap: wrap;
+}
+
+/* ── Projects CTA subline ── */
+.projects-cta {
+  margin-top: 0.25rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 .cta-resume {
@@ -255,7 +277,7 @@ h2 { font-size: 1.18rem; line-height: 1.2; }
   .hero, .matrix, .compact { grid-template-columns: 1fr; }
   .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .head { flex-direction: column; }
-  .cta-footer-inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .availability-inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
 }
 
 @media (max-width: 560px) {
